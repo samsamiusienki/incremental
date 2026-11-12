@@ -1,0 +1,1065 @@
+[gd_scene format=3 uid="uid://bjvpwogvfyn0a"]
+
+[ext_resource type="Script" uid="uid://bka5h54f4wm6y" path="res://points_manager.gd" id="1_0f027"]
+[ext_resource type="AudioStream" uid="uid://b5pjn5xaka30v" path="res://sound/music/fun_music.mp3" id="1_opjno"]
+[ext_resource type="Texture2D" uid="uid://c2bef4gm3tobx" path="res://2d assets/jajo skins/basic_jajo.png" id="2_8mm7a"]
+[ext_resource type="AudioStream" uid="uid://bb8rcgarb34nk" path="res://sound/sfx/click_sound.mp3" id="2_meb7l"]
+[ext_resource type="BitMap" uid="uid://cy2hed40aprgd" path="res://2d assets/jajo skins/basic_jajo_clickmask.png" id="3_fv2he"]
+[ext_resource type="Script" uid="uid://dmvaxycfqqj5w" path="res://audio_manager.gd" id="3_uws2o"]
+[ext_resource type="AudioStream" uid="uid://cbn7wddkl0vdx" path="res://sound/sfx/wrong_sound.mp3" id="3_w30ff"]
+[ext_resource type="AudioStream" uid="uid://u2vbqdqo84js" path="res://sound/sfx/sparkle_sound.mp3" id="4_xy6fp"]
+[ext_resource type="Texture2D" uid="uid://dv30f7d60veyv" path="res://2d assets/jajo skins/bajo_jajo.png" id="5_hq1ik"]
+[ext_resource type="Texture2D" uid="uid://b7ja1erjfania" path="res://2d assets/art/jajo_sign.png" id="6_1n88h"]
+[ext_resource type="FontFile" uid="uid://bxtdmt4pvwddk" path="res://2d assets/fonts/Bubble Sans 1.01.otf" id="6_hq1ik"]
+[ext_resource type="BitMap" uid="uid://cvfcp5dv7oxlk" path="res://2d assets/jajo skins/bajo_jajo_clickmask.png" id="6_vimvf"]
+[ext_resource type="Texture2D" uid="uid://b7h3vx0onmsl5" path="res://2d assets/jajo skins/lucyfer_jajo.png" id="7_7ycvg"]
+[ext_resource type="Texture2D" uid="uid://bu37a6drpvujv" path="res://2d assets/icons/shopiconsmall.png" id="7_66tet"]
+[ext_resource type="Texture2D" uid="uid://dw2gb72o7rf1t" path="res://2d assets/jajo skins/lion_prince_jajo.png" id="7_nfk4m"]
+[ext_resource type="Script" uid="uid://cd7sicwqkhpfm" path="res://shop_item.gd" id="7_vimvf"]
+[ext_resource type="Texture2D" uid="uid://c73fg54h2d52d" path="res://2d assets/jajo skins/bald_jajo.png" id="7_wr18j"]
+[ext_resource type="Texture2D" uid="uid://ovrpd7yqyc1w" path="res://2d assets/jajo skins/jo_jajo.png" id="8_2jcla"]
+[ext_resource type="Texture2D" uid="uid://cnuwvxxpjuvw6" path="res://2d assets/jajo skins/cooler_jajo.png" id="8_6jybn"]
+[ext_resource type="Texture2D" uid="uid://ci00kly3s0lvy" path="res://2d assets/jajo skins/eggman_jajo.png" id="8_7th4q"]
+[ext_resource type="Texture2D" uid="uid://dbkeo0qrgih81" path="res://2d assets/jajo skins/closet_jajo.png" id="8_84odl"]
+[ext_resource type="Texture2D" uid="uid://p7nwfiynivvf" path="res://2d assets/jajo skins/christmas_jajo.png" id="8_ak604"]
+[ext_resource type="Texture2D" uid="uid://b2m32riqyt67i" path="res://2d assets/jajo skins/jajo_jajo.png" id="8_m35m6"]
+[ext_resource type="Texture2D" uid="uid://ikdh8ub4y2ay" path="res://2d assets/jajo skins/halloween_jajo.png" id="8_u0ygc"]
+[ext_resource type="Texture2D" uid="uid://j5r4v8fbc0s8" path="res://2d assets/jajo skins/microtransaction_jajo.png" id="8_wr18j"]
+[ext_resource type="Texture2D" uid="uid://bg8glsd0tr3it" path="res://2d assets/jajo skins/mystery_jajo.png" id="9_42l1d"]
+[ext_resource type="Texture2D" uid="uid://en50an2nhs0p" path="res://2d assets/jajo skins/void_jajo.png" id="9_671wp"]
+[ext_resource type="BitMap" uid="uid://b3u08tp4ys0hg" path="res://2d assets/jajo skins/bald_jajo_clickmask.png" id="9_ghshe"]
+[ext_resource type="Texture2D" uid="uid://ctlj2qxb8nbjf" path="res://2d assets/jajo skins/summer_jajo.png" id="9_mo76n"]
+[ext_resource type="Texture2D" uid="uid://idshgh420qhr" path="res://2d assets/jajo skins/wielkanoc_jajo.png" id="9_qwutr"]
+[ext_resource type="BitMap" uid="uid://kg8ajh1udor2" path="res://2d assets/jajo skins/christmas_jajo_clickmask.png" id="12_kv3aw"]
+[ext_resource type="BitMap" uid="uid://iw4a55xl0s17" path="res://2d assets/jajo skins/closet_jajo_clickmask.png" id="14_o7u2a"]
+[ext_resource type="BitMap" uid="uid://ddmgmcmkq6dgn" path="res://2d assets/jajo skins/eggman_jajo_clickmask.png" id="17_o7u2a"]
+[ext_resource type="BitMap" uid="uid://dd2pggtxame11" path="res://2d assets/jajo skins/halloween_jajo_clickmask.png" id="19_ijoax"]
+[ext_resource type="BitMap" uid="uid://ckl8ro4elx6yw" path="res://2d assets/jajo skins/jo_jajo_clickmask.png" id="22_ijoax"]
+[ext_resource type="BitMap" uid="uid://cpl5je0p4t8fa" path="res://2d assets/jajo skins/mystery_jajo_clickmask.png" id="25_j8kkg"]
+[ext_resource type="BitMap" uid="uid://d167k1rv6mja1" path="res://2d assets/jajo skins/summer_jajo_clickmask.png" id="27_yh4yk"]
+[ext_resource type="BitMap" uid="uid://bc01sxul8if41" path="res://2d assets/jajo skins/lucyfer_jajo_clickmask.png" id="31_p8s74"]
+[ext_resource type="BitMap" uid="uid://bd2d02mabbvx7" path="res://2d assets/jajo skins/lion_prince_jajo_clickmask.png" id="33_o4fqm"]
+[ext_resource type="Texture2D" uid="uid://v4nvmeg13g5b" path="res://2d assets/art/jajo_tlo.png" id="34_gfmxp"]
+
+[sub_resource type="Animation" id="Animation_8mm7a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hq1ik"]
+resource_name = "c_click_animation"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19999999, 0.39999998),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nfk4m"]
+_data = {
+&"RESET": SubResource("Animation_8mm7a"),
+&"c_click_animation": SubResource("Animation_hq1ik")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq1ik"]
+bg_color = Color(1, 0.29966995, 0.3226603, 1)
+
+[node name="Node2D" type="Node2D" unique_id=975986380]
+
+[node name="AudioManager" type="AudioStreamPlayer" parent="." unique_id=1053246303]
+script = ExtResource("3_uws2o")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=143738856]
+stream = ExtResource("1_opjno")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="SFX1Player" type="AudioStreamPlayer" parent="." unique_id=1959465963]
+stream = ExtResource("2_meb7l")
+bus = &"SFX1"
+
+[node name="SFX2Player" type="AudioStreamPlayer" parent="." unique_id=425316516]
+stream = ExtResource("3_w30ff")
+bus = &"SFX2"
+
+[node name="SFX3Player" type="AudioStreamPlayer" parent="." unique_id=776587110]
+stream = ExtResource("4_xy6fp")
+bus = &"SFX2"
+
+[node name="PerSecondTimer" type="Timer" parent="." unique_id=667624776]
+autostart = true
+
+[node name="PointsManager" type="Node2D" parent="." unique_id=467160665]
+script = ExtResource("1_0f027")
+
+[node name="JajoBackground" type="Sprite2D" parent="." unique_id=1632601493]
+texture = ExtResource("34_gfmxp")
+centered = false
+
+[node name="WoodSign1" type="Sprite2D" parent="." unique_id=2059102948]
+position = Vector2(84.00001, 238)
+scale = Vector2(0.3801324, 0.26666662)
+texture = ExtResource("6_1n88h")
+centered = false
+
+[node name="WoodSign2" type="Sprite2D" parent="." unique_id=365947138]
+position = Vector2(84, 377)
+scale = Vector2(0.38807946, 0.2515152)
+texture = ExtResource("6_1n88h")
+centered = false
+
+[node name="CookieScene" type="Node2D" parent="." unique_id=664596974]
+position = Vector2(813, 596)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="CookieScene" unique_id=1011580206]
+custom_minimum_size = Vector2(400, 400)
+custom_maximum_size = Vector2(400, 400)
+propagate_maximum_size = false
+offset_left = -158.0
+offset_top = -160.0
+offset_right = 242.0
+offset_bottom = 240.0
+scale = Vector2(0.8054933, 0.8054933)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="CookieButton" type="TextureButton" parent="CookieScene/AspectRatioContainer" unique_id=1664151479]
+layout_mode = 2
+texture_normal = ExtResource("2_8mm7a")
+texture_click_mask = ExtResource("3_fv2he")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CookieScene" unique_id=761693996]
+libraries/ = SubResource("AnimationLibrary_nfk4m")
+
+[node name="DescriptionPanel" type="Panel" parent="." unique_id=506351215]
+visible = false
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 200)
+clip_contents = true
+offset_left = 972.0
+offset_top = 88.0
+offset_right = 1172.0
+offset_bottom = 250.0
+
+[node name="Description" type="Label" parent="DescriptionPanel" unique_id=2078866973]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 200)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 75.0
+text = "bajo jajo..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="StatsUI" type="Control" parent="." unique_id=53100668]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 699.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="StatsUI" unique_id=537616119]
+layout_mode = 0
+offset_right = 687.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=931833854]
+layout_mode = 2
+
+[node name="TextPointsLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer" unique_id=693157481]
+custom_minimum_size = Vector2(0, 0.035)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "Total Points:"
+
+[node name="PointsLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer" unique_id=1246966790]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "0"
+
+[node name="freespace" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=498415373]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=1783474612]
+layout_mode = 2
+
+[node name="TextUpgradeCostLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer2" unique_id=12138541]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "PerClickUpgradeCost:"
+
+[node name="UpgradeCostLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer2" unique_id=2000914423]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "10"
+
+[node name="freespace2" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=1548284124]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=1108499178]
+layout_mode = 2
+
+[node name="TextPtsPerClickLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer3" unique_id=315049690]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "Points Per Click:"
+
+[node name="PtsPerClickLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer3" unique_id=926261095]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "1"
+
+[node name="freespace3" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=2008933742]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="StatsUI/HBoxContainer5" unique_id=921336429]
+layout_mode = 2
+
+[node name="TextPtsAutoclickLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer4" unique_id=1491005421]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "Points Autoclick:"
+
+[node name="PtsAutoclickLabel" type="Label" parent="StatsUI/HBoxContainer5/HBoxContainer4" unique_id=424231589]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "1"
+
+[node name="UpgradeButton" type="Button" parent="." unique_id=35241859]
+offset_left = 84.0
+offset_top = 378.0
+offset_right = 230.35791
+offset_bottom = 422.0
+scale = Vector2(2.0000205, 1.8589803)
+theme_override_fonts/font = ExtResource("6_hq1ik")
+text = "PERCLICK
+UPGRADE (10)"
+
+[node name="PerSecondUpgradeButton" type="Button" parent="." unique_id=1045266052]
+offset_left = 84.0
+offset_top = 239.0
+offset_right = 227.49852
+offset_bottom = 285.59827
+scale = Vector2(2.0000205, 1.8589803)
+theme_override_fonts/font = ExtResource("6_hq1ik")
+text = "AUTOCLICK
+UPGRADE (10)"
+
+[node name="GoBackButton" type="Button" parent="." unique_id=197127194]
+offset_left = 84.0
+offset_top = 947.99994
+offset_right = 230.35791
+offset_bottom = 991.99994
+scale = Vector2(2.0000205, 1.8589803)
+theme_override_fonts/font = ExtResource("6_hq1ik")
+text = "GO BACK"
+
+[node name="ShopUI" type="Control" parent="." unique_id=727852323]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1191.0
+offset_top = 41.0
+offset_right = 1891.0
+offset_bottom = 1041.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+mouse_force_pass_scroll_events = false
+
+[node name="TabContainer" type="TabContainer" parent="ShopUI" unique_id=1140788312]
+custom_minimum_size = Vector2(700, 1000)
+custom_maximum_size = Vector2(700, 1000)
+propagate_maximum_size = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -500.0
+offset_right = 350.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+current_tab = 0
+tab_0/icon = ExtResource("7_66tet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Shop" type="VBoxContainer" parent="ShopUI/TabContainer" unique_id=1615404124]
+custom_minimum_size = Vector2(700, 1000)
+propagate_maximum_size = false
+clip_contents = true
+layout_mode = 2
+alignment = 1
+metadata/_tab_index = 0
+
+[node name="CostHint" type="Label" parent="ShopUI/TabContainer/Shop" unique_id=1812848158]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "COST:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShopHint" type="Label" parent="ShopUI/TabContainer/Shop" unique_id=245817343]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+text = "Click on the skin you'd like to buy!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CantAffordLabel" type="Label" parent="ShopUI/TabContainer/Shop" unique_id=1654224225]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_hq1ik")
+text = "You don't have enough points!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShopScrollContainer" type="ScrollContainer" parent="ShopUI/TabContainer/Shop" unique_id=1171088842]
+custom_minimum_size = Vector2(700, 800)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="GridContainer" type="GridContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer" unique_id=424478605]
+custom_minimum_size = Vector2(700, 1000)
+custom_maximum_size = Vector2(700, 1000)
+propagate_maximum_size = false
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+columns = 3
+
+[node name="ShopBajo" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=857378957]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(100)
+split_offset = 100
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo" unique_id=642691508]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_hq1ik")
+texture_click_mask = ExtResource("6_vimvf")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 50
+metadata/ItemMetaName = "Bajo"
+metadata/ItemDescription = "Bajo jajo..."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo" unique_id=1547913954]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "bajo jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopBald" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1271914197]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald" unique_id=937301780]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_wr18j")
+texture_click_mask = ExtResource("9_ghshe")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 100
+metadata/ItemMetaName = "Bald"
+metadata/ItemDescription = "Jajo that is bald."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald" unique_id=671794267]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "bald jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopBasic" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1312260025]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic" unique_id=1793735897]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_8mm7a")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 300
+metadata/ItemMetaName = "Basic"
+metadata/ItemDescription = "Always in style."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic" unique_id=878690640]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "basic jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopChristmas" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1951853125]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas" unique_id=1587574762]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_ak604")
+texture_click_mask = ExtResource("12_kv3aw")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 500
+metadata/ItemMetaName = "Christmas"
+metadata/ItemDescription = "Merry Christmas!"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas" unique_id=1936814321]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "christmas jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopCloset" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1815469899]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset" unique_id=349654450]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_84odl")
+texture_click_mask = ExtResource("14_o7u2a")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 1125
+metadata/ItemMetaName = "Closet"
+metadata/ItemDescription = "Jajo that is yet to crack."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset" unique_id=741188124]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "closeted jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopCooler" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1121421048]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler" unique_id=990487163]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_6jybn")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 1200
+metadata/ItemMetaName = "Cooler"
+metadata/ItemDescription = "Has a tragic backstory."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler" unique_id=300459360]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "cooler jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopEggman" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=318588966]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman" unique_id=97326044]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_7th4q")
+texture_click_mask = ExtResource("17_o7u2a")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 2000
+metadata/ItemMetaName = "Eggman"
+metadata/ItemDescription = "Human jajo."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman" unique_id=1299833689]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "human jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopHalloween" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=909283686]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween" unique_id=2126515148]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_u0ygc")
+texture_click_mask = ExtResource("19_ijoax")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 2100
+metadata/ItemMetaName = "Halloween"
+metadata/ItemDescription = "Happy Halloween!"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween" unique_id=2132372660]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "halloween jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ShopJajoJajo" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=2090329548]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo" unique_id=1261817050]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_m35m6")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 2222
+metadata/ItemMetaName = "JajoJajo"
+metadata/ItemDescription = "Jajo(jajo)"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo" unique_id=310837330]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "jajo jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopJoJajo" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=433013799]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo" unique_id=2010223685]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_2jcla")
+texture_click_mask = ExtResource("22_ijoax")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 2500
+metadata/ItemMetaName = "JoJajo"
+metadata/ItemDescription = "Góral jajo."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo" unique_id=246366107]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "jo jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopMicrotransaction" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1070623895]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction" unique_id=2029399307]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_wr18j")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 3000
+metadata/ItemMetaName = "Microtransaction"
+metadata/ItemDescription = "Accesible in the dlc."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction" unique_id=683251720]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "microtransaction jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopMystery" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1732885757]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery" unique_id=1281150077]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_42l1d")
+texture_click_mask = ExtResource("25_j8kkg")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 6000
+metadata/ItemMetaName = "Mystery"
+metadata/ItemDescription = "This Jajo will get to the bottom of this."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery" unique_id=1314135947]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "mystery jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopSummer" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=2139128443]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer" unique_id=2108986880]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_mo76n")
+texture_click_mask = ExtResource("27_yh4yk")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 10000
+metadata/ItemMetaName = "Summer"
+metadata/ItemDescription = "This Jajo is ready for the beach!"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer" unique_id=764837202]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "summer jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopVoid" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1554801614]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid" unique_id=1998809287]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_671wp")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 66666
+metadata/ItemMetaName = "Void"
+metadata/ItemDescription = "Came from a Void Chicken."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid" unique_id=862628127]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "void jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopWielkanoc" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1384628240]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc" unique_id=2078693411]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_qwutr")
+texture_click_mask = ExtResource("3_fv2he")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 80000
+metadata/ItemMetaName = "Wielkanoc"
+metadata/ItemDescription = "Happy Easter!"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc" unique_id=1377295998]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "easter jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopLucifer" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1894814145]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer" unique_id=153421181]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_7ycvg")
+texture_click_mask = ExtResource("31_p8s74")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 100000
+metadata/ItemMetaName = "Lucifer"
+metadata/ItemDescription = "Jajo that has been devilled."
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer" unique_id=1968871238]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "devilled jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ShopLionPrince" type="VSplitContainer" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer" unique_id=1433275147]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+offset_transform_position = Vector2(0, 30)
+offset_transform_visual_only = false
+split_offsets = PackedInt32Array(128)
+split_offset = 128
+
+[node name="TextureButton" type="TextureButton" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince" unique_id=572324104]
+custom_minimum_size = Vector2(200, 100)
+custom_maximum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_nfk4m")
+texture_click_mask = ExtResource("33_o4fqm")
+stretch_mode = 0
+script = ExtResource("7_vimvf")
+metadata/ItemMetaCost = 200000
+metadata/ItemMetaName = "LionPrince"
+metadata/ItemDescription = "Only the finest Jajos can afford this one!"
+
+[node name="Label" type="Label" parent="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince" unique_id=572038950]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_hq1ik")
+theme_override_font_sizes/font_size = 20
+text = "princely jajo
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Tab2" type="VBoxContainer" parent="ShopUI/TabContainer" unique_id=1515358838]
+visible = false
+custom_minimum_size = Vector2(500, 1000)
+layout_mode = 2
+alignment = 1
+metadata/_tab_index = 1
+
+[connection signal="timeout" from="PerSecondTimer" to="PointsManager" method="_on_per_second_timer_timeout"]
+[connection signal="timeout" from="PerSecondTimer" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" method="_on_per_second_timer_timeout"]
+[connection signal="pressed" from="CookieScene/AspectRatioContainer/CookieButton" to="PointsManager" method="_on_cookie_button_pressed"]
+[connection signal="pressed" from="UpgradeButton" to="PointsManager" method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="PerSecondUpgradeButton" to="PointsManager" method="_on_per_second_upgrade_button_pressed"]
+[connection signal="pressed" from="GoBackButton" to="PointsManager" method="_on_go_back_button_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBajo/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBald/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopBasic/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopChristmas/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCloset/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopCooler/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopEggman/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopHalloween/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJajoJajo/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopJoJajo/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMicrotransaction/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopMystery/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopSummer/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopVoid/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopWielkanoc/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLucifer/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" to="ShopUI/TabContainer/Shop/ShopScrollContainer/GridContainer/ShopLionPrince/TextureButton" method="_on_pressed"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cpl5je0p4t8fa"
+path="res://.godot/imported/mystery_jajo_clickmask.png-e787be01ff3d2491ea725c6d04a87410.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/mystery_jajo_clickmask.png"
+dest_files=["res://.godot/imported/mystery_jajo_clickmask.png-e787be01ff3d2491ea725c6d04a87410.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

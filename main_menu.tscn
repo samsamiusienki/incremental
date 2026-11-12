@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://c214pvcfjjdp4"]
+
+[ext_resource type="Texture2D" uid="uid://v4nvmeg13g5b" path="res://2d assets/art/jajo_tlo.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://brpgrtb3rch3s" path="res://mainmenu_control.gd" id="1_jix8l"]
+[ext_resource type="FontFile" uid="uid://bxtdmt4pvwddk" path="res://2d assets/fonts/Bubble Sans 1.01.otf" id="2_7vrkn"]
+[ext_resource type="AudioStream" uid="uid://b5pjn5xaka30v" path="res://sound/music/fun_music.mp3" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://b7ja1erjfania" path="res://2d assets/art/jajo_sign.png" id="3_fu7sn"]
+[ext_resource type="AudioStream" uid="uid://bb8rcgarb34nk" path="res://sound/sfx/click_sound.mp3" id="3_qe12f"]
+
+[node name="Node2D" type="Node2D" unique_id=1138219291]
+
+[node name="MenuControl" type="Control" parent="." unique_id=105737893]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jix8l")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1974554741]
+stream = ExtResource("2_nlkkf")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="SFX1Player" type="AudioStreamPlayer" parent="." unique_id=577308856]
+stream = ExtResource("3_qe12f")
+bus = &"SFX1"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=139434981]
+texture = ExtResource("1_06t4h")
+centered = false
+
+[node name="MainMenu" type="VBoxContainer" parent="." unique_id=254272656]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="TitleLabel" type="Label" parent="MainMenu" unique_id=1081326716]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 200
+text = "JAJOCLICKER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartBContainer" type="CenterContainer" parent="MainMenu" unique_id=1001304243]
+custom_minimum_size = Vector2(450, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="WoodSign1" type="Sprite2D" parent="MainMenu/StartBContainer" unique_id=913847846]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_fu7sn")
+centered = false
+
+[node name="StartButton" type="Button" parent="MainMenu/StartBContainer/WoodSign1" unique_id=1941585177]
+offset_left = -0.00012207031
+offset_top = 3.75
+offset_right = 755.0
+offset_bottom = 330.00012
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 60
+text = "START GAME"
+
+[node name="CreditsBContainer" type="CenterContainer" parent="MainMenu" unique_id=1965388177]
+custom_minimum_size = Vector2(450, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="WoodSign1" type="Sprite2D" parent="MainMenu/CreditsBContainer" unique_id=1972859443]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_fu7sn")
+centered = false
+
+[node name="CreditsButton" type="Button" parent="MainMenu/CreditsBContainer/WoodSign1" unique_id=686785045]
+offset_left = -0.00012207031
+offset_top = 3.75
+offset_right = 755.0
+offset_bottom = 330.00012
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 60
+text = "CREDITS"
+
+[node name="QuitBContainer" type="CenterContainer" parent="MainMenu" unique_id=2106511386]
+custom_minimum_size = Vector2(450, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="WoodSign1" type="Sprite2D" parent="MainMenu/QuitBContainer" unique_id=1571578111]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_fu7sn")
+centered = false
+
+[node name="QuitButton" type="Button" parent="MainMenu/QuitBContainer/WoodSign1" unique_id=951607584]
+offset_left = -0.00012207031
+offset_top = 3.75
+offset_right = 755.0
+offset_bottom = 330.00012
+scale = Vector2(1.004698, 0.9959532)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 60
+text = "QUIT"
+
+[node name="CreditsPanel" type="Panel" parent="." unique_id=872194827]
+visible = false
+custom_minimum_size = Vector2(1000, 1000)
+offset_left = 100.0
+offset_top = 38.0
+offset_right = 1832.0
+offset_bottom = 1038.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreditsPanel" unique_id=1555710564]
+custom_minimum_size = Vector2(1000, 1000)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -866.0
+offset_top = -500.0
+offset_right = 866.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="CreditsTitle1" type="Label" parent="CreditsPanel/VBoxContainer" unique_id=1447555550]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 30
+text = "Game made by Samuel Stochniałek"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsTitle2" type="Label" parent="CreditsPanel/VBoxContainer" unique_id=524267887]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 30
+text = "
+ASSETS USED:
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsContent" type="Label" parent="CreditsPanel/VBoxContainer" unique_id=539136685]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 30
+text = "SOUND FX
+shutter click 2 by kauasilbershlachparodes on pixabay
+Magic Spell 02 by Universfield on pixabay
+UI Sounds pack 5 (2) on pixabay
+
+MUSIC
+Music for Game - Fun Kid game by N2kStudio on pixabay
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitCredits" type="Button" parent="CreditsPanel/VBoxContainer" unique_id=1978850038]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 30
+text = "GO BACK"
+
+[connection signal="pressed" from="MainMenu/StartBContainer/WoodSign1/StartButton" to="MenuControl" method="_on_start_button_pressed"]
+[connection signal="pressed" from="MainMenu/CreditsBContainer/WoodSign1/CreditsButton" to="MenuControl" method="_on_credits_button_pressed"]
+[connection signal="pressed" from="MainMenu/QuitBContainer/WoodSign1/QuitButton" to="MenuControl" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CreditsPanel/VBoxContainer/ExitCredits" to="MenuControl" method="_on_exit_credits_pressed"]

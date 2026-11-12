@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ddmgmcmkq6dgn"
+path="res://.godot/imported/eggman_jajo_clickmask.png-824d75f306dee024c06cbc576ae8632d.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/eggman_jajo_clickmask.png"
+dest_files=["res://.godot/imported/eggman_jajo_clickmask.png-824d75f306dee024c06cbc576ae8632d.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

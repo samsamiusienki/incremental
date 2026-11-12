@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cvfcp5dv7oxlk"
+path="res://.godot/imported/bajo_jajo_clickmask.png-37ee5d8524eac13d3ecf783765b3ca41.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/bajo_jajo_clickmask.png"
+dest_files=["res://.godot/imported/bajo_jajo_clickmask.png-37ee5d8524eac13d3ecf783765b3ca41.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

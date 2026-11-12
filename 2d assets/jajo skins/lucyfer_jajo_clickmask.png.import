@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bc01sxul8if41"
+path="res://.godot/imported/lucyfer_jajo_clickmask.png-227439ca90f5e02565b84d6679d2053f.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/lucyfer_jajo_clickmask.png"
+dest_files=["res://.godot/imported/lucyfer_jajo_clickmask.png-227439ca90f5e02565b84d6679d2053f.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

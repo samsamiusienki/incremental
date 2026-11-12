@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dd2pggtxame11"
+path="res://.godot/imported/halloween_jajo_clickmask.png-bce1d0aad33773db3f1b0e23a7a4b432.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/halloween_jajo_clickmask.png"
+dest_files=["res://.godot/imported/halloween_jajo_clickmask.png-bce1d0aad33773db3f1b0e23a7a4b432.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

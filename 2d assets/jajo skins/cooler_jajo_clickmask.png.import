@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c3juapyg8qttl"
+path="res://.godot/imported/cooler_jajo_clickmask.png-0b036236adc100dbab6211c8f3a07daa.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/cooler_jajo_clickmask.png"
+dest_files=["res://.godot/imported/cooler_jajo_clickmask.png-0b036236adc100dbab6211c8f3a07daa.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bd2d02mabbvx7"
+path="res://.godot/imported/lion_prince_jajo_clickmask.png-481dfad80a40cf795c8130072d9d29b6.res"
+
+[deps]
+
+source_file="res://2d assets/jajo skins/lion_prince_jajo_clickmask.png"
+dest_files=["res://.godot/imported/lion_prince_jajo_clickmask.png-481dfad80a40cf795c8130072d9d29b6.res"]
+
+[params]
+
+create_from=1
+threshold=0.5
